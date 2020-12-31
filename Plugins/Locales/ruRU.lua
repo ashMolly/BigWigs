@@ -178,7 +178,7 @@ L.secondaryDesc = "Вторая метка рейда, которая будет
 L.sendBreak = "Отправка таймера перерыва пользователям BigWigs и DBM."
 L.sendCustomBar = "Отправка таймера '%s' пользователям BigWigs и DBM."
 L.sendPull = "Отправка таймера атаки пользователям BigWigs и DBM."
-L.showHide = "Показ/скрыть"
+L.showHide = "Показать/скрыть"
 L.showRespawnBar = "Показывать таймер появления"
 L.showRespawnBarDesc = "Показывать таймер, который отсчитывает время до появления босса после вайпа."
 L.sinkDescription = "Пути вывода сообщений. Отображение поддерживает иконки, цвета и позволяет вывести до 4х сообщений на экран. Новые сообщения будут расти в размерах, и вновь сокращаться, чтобы уведомить игрока."
@@ -218,7 +218,7 @@ L.victoryMessageBlizzardDesc = "Сообщение Blizzard - это очень 
 L.victoryMessages = "Показывать сообщения о победе над боссом"
 L.victorySound = "Проигрывать звук победы над боссом"
 L.Warning = "Предупреждение"
-L.wipe = "Вайп"
+L.wipe = "Поражение"
 L.wipeSoundTitle = "Пригрывать звук после вайпа"
 L.wrongBreakFormat = "Должно быть между 1 и 60 минутами. Например: /break 5"
 L.wrongCustomBarFormat = "Неверный формат. Правильно будет: /raidbar 20 текст"
@@ -229,14 +229,14 @@ L.wrongTime = "Неверно указанное время. <время> мож
 -- AltPower.lua
 --
 
---L.resetAltPowerDesc = "Reset all the options related to AltPower, including the position of the AltPower anchor."
+L.resetAltPowerDesc = "Сбросить все настройки, связанные с альтернативной силой, включая позицию."
 
 -----------------------------------------------------------------------
 -- AutoReply.lua
 --
 
 L.autoReply = "Автоответчик"
-L.autoReplyDesc = "Автоматически отвечать на приватные сообщения в бою с боссом."
+L.autoReplyDesc = "Автоматически отвечать на личные сообщения в бою с боссом."
 L.responseType = "Тип ответа"
 L.autoReplyFinalReply = "Также отвечать при выходе из боя"
 L.guildAndFriends = "Гильдия и Друзья"
@@ -259,17 +259,17 @@ L.autoReplyLeftCombatAdvancedWipe = "Я проиграл '%s' на: %s"
 
 L.spacing = "Промежуток"
 L.spacingDesc = "Изменить промежуток между полосами."
-L.emphasizeMultiplier = "Множитель Размера"
+L.emphasizeMultiplier = "Множитель размера"
 L.emphasizeMultiplierDesc = "Если Вы отмените перемещение увеличенных полос к своему якорю, эта опция будет просто определять, насколько будут увеличиваться полосы по отношению к нормальным."
---L.temporaryCountdownDesc = "Temporarily enable countdown on the ability associated with this bar."
---L.removeBarDesc = "Temporarily removes this bar."
---L.removeOtherBarDesc = "Temporarily removes all other bars (except this one)."
-L.iconPosition = "Позиция Иконки"
+L.temporaryCountdownDesc = "Временно включить отсчет на способности, связанной с этой полосой."
+L.removeBarDesc = "Временно убирает эту полосу."
+L.removeOtherBarDesc = "Временно убрать все остальные полосы (кроме этой)."
+L.iconPosition = "Позиция иконки"
 L.iconPositionDesc = "Выберите, где на полосе будет находиться иконка."
 L.visibleBarLimit = "Лимит отображаемых полос"
 L.visibleBarLimitDesc = "Установить максимальное количество полос, отображаемых единовременно."
 L.textDesc = "Показать или скрыть текст на полосах."
---L.resetBarsDesc = "Reset all the options related to bars, including the position of the bar anchors."
+L.resetBarsDesc = "Сбросить все настройки полос, включая их позиции."
 
 -----------------------------------------------------------------------
 -- BossBlock.lua
@@ -279,9 +279,9 @@ L.audio = "Звук"
 L.music = "Музыка"
 L.ambience = "Фоновые звуки"
 L.sfx = "Звуковые эффекты"
---L.disableMusic = "Mute music (recommended)"
---L.disableAmbience = "Mute ambient sounds (recommended)"
---L.disableSfx = "Mute sound effects (not recommended)"
+L.disableMusic = "Отключить музыку (рекомендуется)"
+L.disableAmbience = "Отключить звуки окружающего мира (рекомендуется)"
+L.disableSfx = "Отключить звуковые эффекты (не рекомендуется)"
 L.disableAudioDesc = "Во время боя с боссом '%s' будут выключены для того чтобы помочь вам сконцентрироваться на звуках предупреждений BigWigs. После выхода из боя звуки будут включены обратно."
 L.blockTooltipQuests = "Заблокировать цели квестов в подсказке"
 L.blockTooltipQuestsDesc = "Когда вам требуется убить босса для квеста, подсказка показывает обычно \"0/1 выполнено\", при наведении мышкой на босса. Эта опция скрывает список целей других игроков, чтобы подсказка не разрослась слишком высоко."
@@ -301,56 +301,56 @@ L.subzone_eastern_transept = "Восточный трансепт" -- Auchindoun
 L.red = "Красный"
 L.redDesc = "Общие оповещения боя."
 L.blue = "Синий"
-L.blueDesc = "Оповещение событий, касающихся непосредственно Вас, например, наложение дебаффа."
+L.blueDesc = "Оповещение событий, касающихся непосредственно Вас, например: наложение дебаффа."
 L.orange = "Оранжевый"
 L.yellow = "Желтый"
 L.green = "Зеленый"
-L.greenDesc = "Оповещение хороших событий, например, снятие дебаффа с Вас."
-L.cyan = "Циановый"
-L.cyanDesc = "Оповещение о изменении статуса боя, например, переход на следующую фазу."
+L.greenDesc = "Оповещение хороших событий, например: снятие дебаффа с Вас."
+L.cyan = "Сине-зелёный"
+L.cyanDesc = "Оповещение об изменении статуса боя, например: переход на следующую фазу."
 L.purple = "Фиолетовый"
-L.purpleDesc = "Оповещение о способностях только для танков, например, стаки дебаффа на танке."
+L.purpleDesc = "Оповещение о способностях только для танков, например: стаки дебаффа на танке."
 
 -----------------------------------------------------------------------
 -- Countdown.lua
 --
 
---L.countdownAt_desc = "Choose how much time should be remaining on a boss ability (in seconds) when the countdown begins."
---L.countdown = "Countdown"
---L.countdownDesc = "The countdown feature involves a spoken audio countdown and a visual text countdown. It is rarely enabled by default, but you can enable it for any boss ability when looking at the specific boss encounter settings."
---L.countdownAudioHeader = "Spoken Audio Countdown"
---L.countdownTextHeader = "Visual Text Countdown"
---L.resetCountdownDesc = "Resets all the above countdown settings to their defaults."
---L.resetAllCountdownDesc = "If you've selected custom countdown voices for any boss encounter settings, this button will reset ALL of them as well as resetting all the above countdown settings to their defaults."
+L.countdownAt_desc = "Выберите, сколько времени должно оставаться на способность босса (в секундах) когда начнется отсчет."
+L.countdown = "Обратный отсчет"
+L.countdownDesc = "Функция обратного отсчета включает звуковой отсчет и визуальное отображение. Это редко включено по умолчанию, но вы можете включить это для любой способности босса во время просмотра энкаунтера отдельного босса."
+L.countdownAudioHeader = "Звуковой отсчет"
+L.countdownTextHeader = "Визуальный отсчет"
+L.resetCountdownDesc = "сбрасывает все настройки отсчета до значений по умолчанию."
+L.resetAllCountdownDesc = "Если вы выбрали пользовательский голос отсчета для любых настроек энкаунтера босса, эта кнопка сбросит их ВСЕ, а также сбросит все настройки отсчета выше до значений по умолчанию."
 
 -----------------------------------------------------------------------
 -- InfoBox.lua
 --
 
-L.infoBox = "ИнфоБлок"
+L.infoBox = "Инфо-блок"
 
 -----------------------------------------------------------------------
 -- Messages.lua
 --
 
---L.resetMessagesDesc = "Reset all the options related to messages, including the position of the message anchors."
+L.resetMessagesDesc = "Сбросить все настройки сообщений, включая позицию якоря сообщений."
 L.uppercase = "БОЛЬШИМИ БУКВАМИ"
---L.uppercaseDesc = "All emphasized messages will be converted to UPPERCASE."
+L.uppercaseDesc = "Все выделенные сообщения будут отображены ЗАГЛАВНЫМИ БУКВАМИ."
 
 -----------------------------------------------------------------------
 -- Proximity.lua
 --
 
---L.resetProximityDesc = "Reset all the options related to proximity, including the position of the proximity anchor."
+L.resetProximityDesc = "Сбросить все настройки, связанные с близостью, включая позицию якоря близости."
 
 -----------------------------------------------------------------------
 -- Sound.lua
 --
 
---L.oldSounds = "Old Sounds"
---L.resetSoundDesc = "Resets the above sounds to their defaults."
---L.onyou = "A spell, buff, or debuff is on you"
---L.underyou = "You need to move out of a spell under you"
+L.oldSounds = "Устаревшие звуки"
+L.resetSoundDesc = "Сбросить звуки к значениям по умолчанию."
+L.onyou = "Заклинание, бафф или дебафф на вас"
+L.underyou = "Вам нужно выйти из заклинания под вами"
 
 -----------------------------------------------------------------------
 -- Statistics.lua
